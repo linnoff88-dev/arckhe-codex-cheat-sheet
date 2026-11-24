@@ -22,7 +22,7 @@ A practical reference for using OpenAI Codex CLI effectively. Focuses on pattern
 
 ## ðŸ“– Guia de uso
 
-Guia completo (landing + passo a passo): **https://inematds.github.io/codex-cheat-sheet/guia/**
+Guia completo (landing + passo a passo): **https://linnoff88-dev.github.io/
 
 ## Quick Start
 
