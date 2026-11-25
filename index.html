@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Codex Cheat Sheet â€” referÃªncia do OpenAI Codex CLI</title>
-<meta name="description" content="Folha de consulta do OpenAI Codex CLI: instalaÃ§Ã£o, comandos, configuraÃ§Ã£o, MCP, sandbox, skills e workflows. Em portuguÃªs e inglÃªs, com busca.">
+<title>Codex Cheat Sheet ê¢â¬â referêÂªncia do OpenAI Codex CLI</title>
+<meta name="description" content="Folha de consulta do OpenAI Codex CLI: instalaêÂ§êÂ£o, comandos, configuraêÂ§êÂ£o, MCP, sandbox, skills e workflows. Em portuguêÂªs e inglêÂªs, com busca.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -36,8 +36,8 @@
   nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
   nav .brand .emoji{font-size:1.25rem}
   nav .sep{color:var(--mut);opacity:.45}
-  nav .ARCKHÉ{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
-  nav .ARCKHÉ:hover{filter:brightness(1.15)}
+  nav .ARCKHê{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .ARCKHê:hover{filter:brightness(1.15)}
   nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
   nav .pro:hover{filter:brightness(1.15)}
   nav .clubpro{display:inline-flex;align-items:center;gap:6px}
@@ -109,8 +109,8 @@
   .doc details[open]{padding-bottom:12px}
   .doc summary{cursor:pointer;padding:14px 0;font-family:Sora;font-weight:600;color:var(--txt);list-style:none}
   .doc summary::-webkit-details-marker{display:none}
-  .doc summary::before{content:"â–¸ ";color:var(--amb)}
-  .doc details[open] summary::before{content:"â–¾ "}
+  .doc summary::before{content:"ê¢âÂ¸ ";color:var(--amb)}
+  .doc details[open] summary::before{content:"ê¢âÂ¾ "}
   .doc table{width:100%;border-collapse:collapse;font-size:.9rem;margin:14px 0;display:block;overflow-x:auto}
   .doc th,.doc td{border:1px solid var(--line);padding:.55em .7em;text-align:left}
   .doc th{background:var(--bg2);font-family:Sora}
@@ -127,17 +127,17 @@
 <body>
 
 <nav><div class="wrap">
-  <a class="brand" href="#top"><span class="emoji">âš¡</span> Codex Cheat Sheet</a>
+  <a class="brand" href="#top"><span class="emoji">ê¢Å¡Â¡</span> Codex Cheat Sheet</a>
   <span class="sep">|</span>
   <span class="clubpro">
-    <a class="ARCKHÉ" href="https://ARCKHÉ AI" target="_blank" rel="noopener">ARCKHÉ AI</a>
+    <a class="ARCKHê" href="https://ARCKHê AI" target="_blank" rel="noopener">ARCKHê AI</a>
     <span class="sep">-</span>
-    <a class="pro" href="https://ARCKHÉ.pro" target="_blank" rel="noopener">PRO</a>
+    <a class="pro" href="https://ARCKHê.pro" target="_blank" rel="noopener">PRO</a>
   </span>
   <div class="links">
     <a class="sec" href="guia/">Guia de uso</a>
     <a class="sec" href="#top">Folha de consulta</a>
-    <button class="tgl" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">ðŸŒ™</button>
+    <button class="tgl" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">ê°Å¸Åâ¢</button>
     <a class="btn" href="https://github.com/linnoff88-dev/codex-cheat-sheet" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div></nav>
@@ -146,22 +146,22 @@
   <aside class="toc" id="toc"></aside>
   <main>
     <div class="toolbar">
-      <input id="q" type="search" placeholder="Buscar comando, flag ou seÃ§Ã£oâ€¦ (ex.: sandbox, /goal, mcp)" autocomplete="off">
+      <input id="q" type="search" placeholder="Buscar comando, flag ou seêÂ§êÂ£oê¢â¬Â¦ (ex.: sandbox, /goal, mcp)" autocomplete="off">
       <span class="lang">
-        <button id="btPT" class="on">PortuguÃªs</button><button id="btEN">English</button>
+        <button id="btPT" class="on">PortuguêÂªs</button><button id="btEN">English</button>
       </span>
       <a class="btn ghost" href="guia/">Guia passo a passo</a>
     </div>
-    <div class="doc" id="doc"><p class="loading">Carregando a folha de consultaâ€¦</p></div>
+    <div class="doc" id="doc"><p class="loading">Carregando a folha de consultaê¢â¬Â¦</p></div>
   </main>
 </div>
 
 <footer>
   <div class="wrap">
     <div class="pill">Markdown</div><div class="pill">OpenAI Codex CLI</div><div class="pill">GitHub Pages</div>
-    <p style="margin-top:18px">Codex Cheat Sheet Â· baseado na documentaÃ§Ã£o oficial da OpenAI Â·
-      <a href="https://github.com/linnoff88-dev/codex-cheat-sheet">linnoff88-dev/codex-cheat-sheet</a> Â·
-      <a href="https://ARCKHÉ AI">ARCKHÉ AI</a></p>
+    <p style="margin-top:18px">Codex Cheat Sheet êÂ· baseado na documentaêÂ§êÂ£o oficial da OpenAI êÂ·
+      <a href="https://github.com/linnoff88-dev/codex-cheat-sheet">linnoff88-dev/codex-cheat-sheet</a> êÂ·
+      <a href="https://ARCKHê AI">ARCKHê AI</a></p>
   </div>
 </footer>
 
@@ -170,10 +170,10 @@
 (function(){
   var KEY='codex-cheat-sheet-theme';
   var b=document.body, t=document.getElementById('themeToggle');
-  if(localStorage.getItem(KEY)==='light'){ b.classList.add('light'); t.textContent='â˜€ï¸'; }
+  if(localStorage.getItem(KEY)==='light'){ b.classList.add('light'); t.textContent='ê¢Ëâ¬ê¯Â¸Â'; }
   t.addEventListener('click',function(){
     var light=b.classList.toggle('light');
-    t.textContent=light?'â˜€ï¸':'ðŸŒ™';
+    t.textContent=light?'ê¢Ëâ¬ê¯Â¸Â':'ê°Å¸Åâ¢';
     localStorage.setItem(KEY, light?'light':'dark');
   });
 })();
@@ -211,12 +211,12 @@
     localStorage.setItem(LKEY, lang);
     document.documentElement.lang = lang==='en' ? 'en' : 'pt-BR';
     q.placeholder = lang==='en'
-      ? 'Search a command, flag or sectionâ€¦ (e.g. sandbox, /goal, mcp)'
-      : 'Buscar comando, flag ou seÃ§Ã£oâ€¦ (ex.: sandbox, /goal, mcp)';
+      ? 'Search a command, flag or sectionê¢â¬Â¦ (e.g. sandbox, /goal, mcp)'
+      : 'Buscar comando, flag ou seêÂ§êÂ£oê¢â¬Â¦ (ex.: sandbox, /goal, mcp)';
     if(cache[file]){ render(cache[file]); return; }
-    doc.innerHTML='<p class="loading">â€¦</p>';
+    doc.innerHTML='<p class="loading">ê¢â¬Â¦</p>';
     fetch(file).then(function(r){return r.text();}).then(function(md){ cache[file]=md; render(md); })
-      .catch(function(){ doc.innerHTML='<p class="loading">NÃ£o consegui carregar '+file+'.</p>'; });
+      .catch(function(){ doc.innerHTML='<p class="loading">NêÂ£o consegui carregar '+file+'.</p>'; });
   }
 
   function filter(){

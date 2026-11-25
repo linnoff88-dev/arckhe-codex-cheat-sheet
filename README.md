@@ -1,4 +1,4 @@
-﻿<div align="center">
+ï»¿<div align="center">
 
 # Codex Cheat Sheet
 
@@ -10,7 +10,7 @@
 
 <a href="https://openai.com/codex/"><img width="763" height="341" alt="Codex cheat sheet" src="assets/image.png" /></a>
 
-> **Your complete guide to mastering OpenAI Codex â€” from zero to productive in minutes.**
+> **Your complete guide to mastering OpenAI Codex ê¢â¬â from zero to productive in minutes.**
 
 A practical reference for using OpenAI Codex CLI effectively. Focuses on patterns that help you think critically about what to delegate and what to handle yourself.
 
@@ -18,9 +18,9 @@ A practical reference for using OpenAI Codex CLI effectively. Focuses on pattern
 
 </div>
 
-ðŸ‡§ðŸ‡· [VersÃ£o em portuguÃªs](README.pt-BR.md)
+ê°Å¸â¡Â§ê°Å¸â¡Â· [VersêÂ£o em portuguêÂªs](README.pt-BR.md)
 
-## ðŸ“– Guia de uso
+## ê°Å¸ââ Guia de uso
 
 Guia completo (landing + passo a passo): **https://linnoff88-dev.github.io/
 
@@ -147,7 +147,7 @@ codex login status
 # Keyboard shortcuts
 Ctrl+C                    # Cancel current operation (or run /exit to close the session)
 Tab                       # Queue a follow-up prompt, slash command, or shell command while Codex is working
-â†‘/â†“                       # Restore draft history
+ê¢â â/ê¢â â                       # Restore draft history
 Esc Esc                   # Edit previous message (empty composer; forks the chat from that point)
 Ctrl+R                    # Search prompt history
 Ctrl+O                    # Copy the latest completed output
@@ -626,13 +626,13 @@ codex exec "explain this file" < app.js > explanation.md
 
 <a id="skills"></a>
 
-- **What they are:** Native, on-disk reusable capabilities that Codex can auto-discover. Each skill is a bundle with `name`, `description`, and an optional body kept on disk. Skills are generally available â€” no feature flag required.
+- **What they are:** Native, on-disk reusable capabilities that Codex can auto-discover. Each skill is a bundle with `name`, `description`, and an optional body kept on disk. Skills are generally available ê¢â¬â no feature flag required.
 - **Where skills live:** `~/.codex/skills/**/SKILL.md` (recursive). Only files named exactly `SKILL.md` count; hidden entries and symlinks are skipped.
 - **File format (YAML frontmatter + body):**
   ```markdown
   ---
-  name: your-skill-name          # required, â‰¤ 100 chars, single line
-  description: when/why to use   # required, â‰¤ 500 chars, single line
+  name: your-skill-name          # required, ê¢â°Â¤ 100 chars, single line
+  description: when/why to use   # required, ê¢â°Â¤ 500 chars, single line
   ---
 
   # Optional body (kept on disk)
@@ -657,7 +657,7 @@ Recent additions to Codex that you should know about:
 <details>
 <summary><strong>Task Goals</strong></summary>
 
-The `/goal` command sets a persisted objective for a long-running task. It loops plan â†’ act â†’ test â†’ review until your stop condition is met.
+The `/goal` command sets a persisted objective for a long-running task. It loops plan ê¢â â act ê¢â â test ê¢â â review until your stop condition is met.
 
 **Usage:**
 
@@ -1033,7 +1033,7 @@ Found an issue or have a suggestion? Contributions are welcome!
 
 ## License
 
-MIT License â€” Free to use and modify.
+MIT License ê¢â¬â Free to use and modify.
 
 ## Credits and Inspiration
 

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Codex Cheat Sheet â€” guia completo do OpenAI Codex CLI</title>
-<meta name="description" content="Guia progressivo do OpenAI Codex CLI: instalaÃ§Ã£o, comandos, configuraÃ§Ã£o, MCP, sandbox, skills e workflows de nÃ­vel expert â€” do zero ao uso produtivo.">
+<title>Codex Cheat Sheet ê¢â¬â guia completo do OpenAI Codex CLI</title>
+<meta name="description" content="Guia progressivo do OpenAI Codex CLI: instalaêÂ§êÂ£o, comandos, configuraêÂ§êÂ£o, MCP, sandbox, skills e workflows de nêÂ­vel expert ê¢â¬â do zero ao uso produtivo.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -36,8 +36,8 @@
   nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
   nav .brand .emoji{font-size:1.25rem}
   nav .sep{color:var(--mut);opacity:.45}
-  nav .ARCKHÉ{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
-  nav .ARCKHÉ:hover{filter:brightness(1.15)}
+  nav .ARCKHê{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .ARCKHê:hover{filter:brightness(1.15)}
   nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
   nav .pro:hover{filter:brightness(1.15)}
   nav .clubpro{display:inline-flex;align-items:center;gap:6px}
@@ -94,20 +94,20 @@
 <body>
 
 <nav><div class="wrap">
-  <a class="brand" href="#top"><span class="emoji">âš¡</span> Codex Cheat Sheet</a>
+  <a class="brand" href="#top"><span class="emoji">ê¢Å¡Â¡</span> Codex Cheat Sheet</a>
   <span class="sep">|</span>
   <span class="clubpro">
-    <a class="ARCKHÉ" href="https://ARCKHÉ AI" target="_blank" rel="noopener">ARCKHÉ AI</a>
+    <a class="ARCKHê" href="https://ARCKHê AI" target="_blank" rel="noopener">ARCKHê AI</a>
     <span class="sep">-</span>
-    <a class="pro" href="https://ARCKHÉ.pro" target="_blank" rel="noopener">PRO</a>
+    <a class="pro" href="https://ARCKHê.pro" target="_blank" rel="noopener">PRO</a>
   </span>
   <div class="links">
-    <a class="sec" href="#oque">O que Ã©</a>
+    <a class="sec" href="#oque">O que êÂ©</a>
     <a class="sec" href="#fluxo">Como funciona</a>
     <a class="sec" href="#guia">Guia de uso</a>
     <a class="sec" href="#exemplos">Exemplos</a>
     <a class="sec" href="#roadmap">Roadmap</a>
-    <button class="tgl" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">ðŸŒ™</button>
+    <button class="tgl" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">ê°Å¸Åâ¢</button>
     <a class="btn" href="https://github.com/linnoff88-dev/codex-cheat-sheet" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div></nav>
@@ -116,11 +116,11 @@
   <div class="glow"></div>
   <div class="wrap">
     <div>
-      <span class="chip">ReferÃªncia do OpenAI Codex CLI</span>
-      <h1>Do zero ao <span class="amb">produtivo</span> no Codex, em cinco nÃ­veis.</h1>
-      <p class="lead">Uma folha de consulta Ãºnica para o Codex CLI da OpenAI: instalaÃ§Ã£o, comandos do dia a dia, configuraÃ§Ã£o, MCP, sandbox, skills e workflows de automaÃ§Ã£o. Todos os comandos vÃªm da documentaÃ§Ã£o oficial â€” nada inventado.</p>
+      <span class="chip">ReferêÂªncia do OpenAI Codex CLI</span>
+      <h1>Do zero ao <span class="amb">produtivo</span> no Codex, em cinco nêÂ­veis.</h1>
+      <p class="lead">Uma folha de consulta êÂºnica para o Codex CLI da OpenAI: instalaêÂ§êÂ£o, comandos do dia a dia, configuraêÂ§êÂ£o, MCP, sandbox, skills e workflows de automaêÂ§êÂ£o. Todos os comandos vêÂªm da documentaêÂ§êÂ£o oficial ê¢â¬â nada inventado.</p>
       <div class="cta">
-        <a class="btn" href="#guia">ComeÃ§ar o guia</a>
+        <a class="btn" href="#guia">ComeêÂ§ar o guia</a>
         <a class="btn ghost" href="https://github.com/linnoff88-dev/codex-cheat-sheet" target="_blank" rel="noopener">Ver no GitHub</a>
         <a class="btn ghost" href="https://github.com/linnoff88-dev/codex-cheat-sheet/blob/main/README.pt-BR.md" target="_blank" rel="noopener">Cheat sheet em PT-BR</a>
       </div>
@@ -130,77 +130,77 @@
 </header>
 
 <section id="oque"><div class="wrap">
-  <span class="chip">O que Ã©</span>
-  <h2>Uma pÃ¡gina, cinco nÃ­veis, zero enrolaÃ§Ã£o</h2>
-  <p class="sub">O projeto Ã© documentaÃ§Ã£o: um <code>README.md</code> progressivo mais skills reutilizÃ¡veis em disco. NÃ£o hÃ¡ app para rodar â€” o valor estÃ¡ na consulta rÃ¡pida.</p>
+  <span class="chip">O que êÂ©</span>
+  <h2>Uma pêÂ¡gina, cinco nêÂ­veis, zero enrolaêÂ§êÂ£o</h2>
+  <p class="sub">O projeto êÂ© documentaêÂ§êÂ£o: um <code>README.md</code> progressivo mais skills reutilizêÂ¡veis em disco. NêÂ£o hêÂ¡ app para rodar ê¢â¬â o valor estêÂ¡ na consulta rêÂ¡pida.</p>
   <div class="grid g3">
-    <div class="card"><h3>ðŸ“š Progressivo</h3><p>Do NÃ­vel 1 (instalar e autenticar) ao NÃ­vel 5 (CI/CD, migraÃ§Ã£o de legado, auditoria de seguranÃ§a). VocÃª entra no nÃ­vel que precisa.</p></div>
-    <div class="card"><h3>ðŸ”Ž EscaneÃ¡vel</h3><p>Blocos <code>&lt;details&gt;</code> por tema e tabelas de referÃªncia: vocÃª abre sÃ³ o que interessa e copia o comando.</p></div>
-    <div class="card"><h3>âœ… Oficial</h3><p>Comandos, flags e modelos conferidos contra a documentaÃ§Ã£o oficial em developers.openai.com/codex, com data de atualizaÃ§Ã£o.</p></div>
+    <div class="card"><h3>ê°Å¸âÅ¡ Progressivo</h3><p>Do NêÂ­vel 1 (instalar e autenticar) ao NêÂ­vel 5 (CI/CD, migraêÂ§êÂ£o de legado, auditoria de seguranêÂ§a). VocêÂª entra no nêÂ­vel que precisa.</p></div>
+    <div class="card"><h3>ê°Å¸âÅ½ EscaneêÂ¡vel</h3><p>Blocos <code>&lt;details&gt;</code> por tema e tabelas de referêÂªncia: vocêÂª abre sêÂ³ o que interessa e copia o comando.</p></div>
+    <div class="card"><h3>ê¢Åâ¦ Oficial</h3><p>Comandos, flags e modelos conferidos contra a documentaêÂ§êÂ£o oficial em developers.openai.com/codex, com data de atualizaêÂ§êÂ£o.</p></div>
   </div>
 </div></section>
 
 <section id="fluxo"><div class="wrap">
   <span class="chip">Como funciona</span>
-  <h2>A trilha dos cinco nÃ­veis</h2>
-  <p class="sub">Cada nÃ­vel assume o anterior. O README segue exatamente esta ordem.</p>
+  <h2>A trilha dos cinco nêÂ­veis</h2>
+  <p class="sub">Cada nêÂ­vel assume o anterior. O README segue exatamente esta ordem.</p>
   <div class="flow">
-    <span>1 Â· ComeÃ§ar</span><span class="arr">â†’</span>
-    <span>2 Â· Comandos</span><span class="arr">â†’</span>
-    <span>3 Â· ConfiguraÃ§Ã£o</span><span class="arr">â†’</span>
-    <span>4 Â· AvanÃ§ado</span><span class="arr">â†’</span>
-    <span>5 Â· Workflows</span>
+    <span>1 êÂ· ComeêÂ§ar</span><span class="arr">ê¢â â</span>
+    <span>2 êÂ· Comandos</span><span class="arr">ê¢â â</span>
+    <span>3 êÂ· ConfiguraêÂ§êÂ£o</span><span class="arr">ê¢â â</span>
+    <span>4 êÂ· AvanêÂ§ado</span><span class="arr">ê¢â â</span>
+    <span>5 êÂ· Workflows</span>
   </div>
   <div class="grid g3" style="margin-top:26px">
-    <div class="card"><h3>NÃ­veis 1â€“2</h3><p>InstalaÃ§Ã£o, login, atalhos de teclado, slash commands, sessÃµes (<code>codex resume</code>), flags Ãºteis e a referÃªncia de subcomandos.</p></div>
-    <div class="card"><h3>NÃ­vel 3</h3><p><code>~/.codex/config.toml</code>, escolha de modelo e esforÃ§o de raciocÃ­nio, prompts customizados em <code>~/.codex/prompts/</code> e memÃ³ria via <code>AGENTS.md</code>.</p></div>
-    <div class="card"><h3>NÃ­veis 4â€“5</h3><p>MCP, sandbox e polÃ­ticas de aprovaÃ§Ã£o, modo nÃ£o interativo, skills, <code>/goal</code>, GitHub Actions, revisÃ£o de cÃ³digo e auditoria.</p></div>
+    <div class="card"><h3>NêÂ­veis 1ê¢â¬â2</h3><p>InstalaêÂ§êÂ£o, login, atalhos de teclado, slash commands, sessêÂµes (<code>codex resume</code>), flags êÂºteis e a referêÂªncia de subcomandos.</p></div>
+    <div class="card"><h3>NêÂ­vel 3</h3><p><code>~/.codex/config.toml</code>, escolha de modelo e esforêÂ§o de raciocêÂ­nio, prompts customizados em <code>~/.codex/prompts/</code> e memêÂ³ria via <code>AGENTS.md</code>.</p></div>
+    <div class="card"><h3>NêÂ­veis 4ê¢â¬â5</h3><p>MCP, sandbox e polêÂ­ticas de aprovaêÂ§êÂ£o, modo nêÂ£o interativo, skills, <code>/goal</code>, GitHub Actions, revisêÂ£o de cêÂ³digo e auditoria.</p></div>
   </div>
 </div></section>
 
 <section id="pre"><div class="wrap">
-  <span class="chip">PrÃ©-requisitos</span>
-  <h2>O que vocÃª precisa antes de abrir a folha</h2>
-  <p class="sub">SÃ³ isto: o CLI instalado e uma conta autenticada.</p>
+  <span class="chip">PrêÂ©-requisitos</span>
+  <h2>O que vocêÂª precisa antes de abrir a folha</h2>
+  <p class="sub">SêÂ³ isto: o CLI instalado e uma conta autenticada.</p>
   <div class="grid g3">
     <div class="card"><h3>Codex CLI</h3><p>Instale pelo instalador oficial, npm, Homebrew ou pnpm.</p><pre><span class="c"># instalador oficial (macOS/Linux)</span>
 <span class="k">curl</span> -fsSL <span class="s">https://chatgpt.com/codex/install.sh</span> | sh</pre></div>
-    <div class="card"><h3>Conta</h3><p>ChatGPT (recomendado) ou chave de API, com cobranÃ§a por uso.</p><pre><span class="c"># login por ChatGPT</span>
+    <div class="card"><h3>Conta</h3><p>ChatGPT (recomendado) ou chave de API, com cobranêÂ§a por uso.</p><pre><span class="c"># login por ChatGPT</span>
 <span class="k">codex</span>
 <span class="c"># ou por chave de API</span>
 <span class="k">printenv</span> OPENAI_API_KEY | codex login --with-api-key</pre></div>
-    <div class="card"><h3>Um repositÃ³rio</h3><p>O Codex trabalha no diretÃ³rio atual. Rode dentro de um projeto versionado em git.</p><pre><span class="k">codex</span> --version
+    <div class="card"><h3>Um repositêÂ³rio</h3><p>O Codex trabalha no diretêÂ³rio atual. Rode dentro de um projeto versionado em git.</p><pre><span class="k">codex</span> --version
 <span class="k">codex</span> login status</pre></div>
   </div>
 </div></section>
 
 <section id="guia"><div class="wrap">
-  <span class="chip">Guia de uso Â· passo a passo</span>
+  <span class="chip">Guia de uso êÂ· passo a passo</span>
   <h2>Como usar esta folha de consulta</h2>
   <p class="sub">Comandos reais do README. Copie, cole, ajuste ao seu projeto.</p>
 
   <div class="step"><div class="b">1</div><div>
-    <h3>Instale e faÃ§a login</h3>
-    <p>Depois de instalar, abra o Codex e escolha â€œSign in with ChatGPTâ€. Confira que as credenciais ficaram salvas.</p>
-<pre><span class="k">codex</span>                 <span class="c"># abre a sessÃ£o interativa</span>
-<span class="k">codex</span> login status    <span class="c"># saÃ­da 0 = credenciais presentes</span>
-<span class="k">codex</span> update          <span class="c"># auto-atualiza (instalaÃ§Ãµes via installer)</span></pre>
+    <h3>Instale e faêÂ§a login</h3>
+    <p>Depois de instalar, abra o Codex e escolha ê¢â¬ÅSign in with ChatGPTê¢â¬Â. Confira que as credenciais ficaram salvas.</p>
+<pre><span class="k">codex</span>                 <span class="c"># abre a sessêÂ£o interativa</span>
+<span class="k">codex</span> login status    <span class="c"># saêÂ­da 0 = credenciais presentes</span>
+<span class="k">codex</span> update          <span class="c"># auto-atualiza (instalaêÂ§êÂµes via installer)</span></pre>
   </div></div>
 
   <div class="step"><div class="b">2</div><div>
     <h3>Primeiros comandos</h3>
-    <p>Interativo para explorar, <code>exec</code> para automaÃ§Ã£o e scripts.</p>
+    <p>Interativo para explorar, <code>exec</code> para automaêÂ§êÂ£o e scripts.</p>
 <pre><span class="k">codex</span> <span class="s">"explain this project"</span>
-<span class="k">codex</span> exec <span class="s">"explain utils.ts"</span>   <span class="c"># nÃ£o interativo</span></pre>
+<span class="k">codex</span> exec <span class="s">"explain utils.ts"</span>   <span class="c"># nêÂ£o interativo</span></pre>
   </div></div>
 
   <div class="step"><div class="b">3</div><div>
-    <h3>Domine a navegaÃ§Ã£o</h3>
+    <h3>Domine a navegaêÂ§êÂ£o</h3>
     <p>Os atalhos economizam mais tempo que qualquer prompt bem escrito.</p>
-<pre><span class="k">Tab</span>        <span class="c"># enfileira um prÃ³ximo prompt enquanto o Codex trabalha</span>
+<pre><span class="k">Tab</span>        <span class="c"># enfileira um prêÂ³ximo prompt enquanto o Codex trabalha</span>
 <span class="k">Esc Esc</span>    <span class="c"># edita a mensagem anterior (bifurca a conversa dali)</span>
-<span class="k">Ctrl+R</span>     <span class="c"># busca no histÃ³rico de prompts</span>
-<span class="k">Ctrl+O</span>     <span class="c"># copia a Ãºltima saÃ­da completa</span>
+<span class="k">Ctrl+R</span>     <span class="c"># busca no histêÂ³rico de prompts</span>
+<span class="k">Ctrl+O</span>     <span class="c"># copia a êÂºltima saêÂ­da completa</span>
 <span class="k">@</span>          <span class="c"># busca fuzzy de arquivos</span>
 <span class="k">!comando</span>   <span class="c"># roda um comando local sob o sandbox atual</span></pre>
   </div></div>
@@ -210,9 +210,9 @@
     <p>Ajuste em <code>~/.codex/config.toml</code> ou por flag. Panorama de setembro de 2026.</p>
 <pre><span class="c"># config.toml</span>
 model = <span class="s">"gpt-6-astra"</span>          <span class="c"># novo carro-chefe, trabalho ponta a ponta</span>
-model = <span class="s">"gpt-5.6-sol"</span>          <span class="c"># complexo: cÃ³digo, uso de computador, pesquisa</span>
+model = <span class="s">"gpt-5.6-sol"</span>          <span class="c"># complexo: cêÂ³digo, uso de computador, pesquisa</span>
 model = <span class="s">"gpt-5.6-terra"</span>        <span class="c"># equilibrado, dia a dia</span>
-model = <span class="s">"gpt-5.6-luna"</span>         <span class="c"># rÃ¡pido e barato, tarefas leves</span>
+model = <span class="s">"gpt-5.6-luna"</span>         <span class="c"># rêÂ¡pido e barato, tarefas leves</span>
 model_reasoning_effort = <span class="s">"medium"</span>   <span class="c"># minimal | low | medium | high | xhigh</span>
 
 <span class="c"># ou direto na chamada</span>
@@ -220,17 +220,17 @@ model_reasoning_effort = <span class="s">"medium"</span>   <span class="c"># min
   </div></div>
 
   <div class="step"><div class="b">5</div><div>
-    <h3>DÃª memÃ³ria ao projeto com AGENTS.md</h3>
-    <p>Um arquivo na raiz descreve stack, padrÃµes e regras â€” o Codex passa a segui-los em toda sessÃ£o.</p>
+    <h3>DêÂª memêÂ³ria ao projeto com AGENTS.md</h3>
+    <p>Um arquivo na raiz descreve stack, padrêÂµes e regras ê¢â¬â o Codex passa a segui-los em toda sessêÂ£o.</p>
 <pre><span class="c"># AGENTS.md na raiz do projeto</span>
-<span class="c"># stack, padrÃµes de cÃ³digo, como rodar os testes,</span>
-<span class="c"># o que nunca mexer. Este prÃ³prio repo tem um.</span></pre>
+<span class="c"># stack, padrêÂµes de cêÂ³digo, como rodar os testes,</span>
+<span class="c"># o que nunca mexer. Este prêÂ³prio repo tem um.</span></pre>
   </div></div>
 
   <div class="step"><div class="b">6</div><div>
     <h3>Ative skills e MCP</h3>
-    <p>Skills sÃ£o capacidades reutilizÃ¡veis em disco. Este repo traz quatro em <code>skills/</code>: form-filling, log-review, pdf-processing e project-management.</p>
-<pre><span class="c"># skills/&lt;nome&gt;/SKILL.md â€” front-matter + instruÃ§Ãµes</span>
+    <p>Skills sêÂ£o capacidades reutilizêÂ¡veis em disco. Este repo traz quatro em <code>skills/</code>: form-filling, log-review, pdf-processing e project-management.</p>
+<pre><span class="c"># skills/&lt;nome&gt;/SKILL.md ê¢â¬â front-matter + instruêÂ§êÂµes</span>
 <span class="c"># servidores MCP entram no config.toml</span>
 [mcp_servers.js_repl]
 command = <span class="s">"node"</span></pre>
@@ -238,15 +238,15 @@ command = <span class="s">"node"</span></pre>
 
   <div class="step"><div class="b">7</div><div>
     <h3>Rode tarefas longas com /goal</h3>
-    <p>Define um objetivo persistente: o Codex repete planejar â†’ agir â†’ testar â†’ revisar atÃ© bater a condiÃ§Ã£o de parada. Use em branch descartÃ¡vel.</p>
+    <p>Define um objetivo persistente: o Codex repete planejar ê¢â â agir ê¢â â testar ê¢â â revisar atêÂ© bater a condiêÂ§êÂ£o de parada. Use em branch descartêÂ¡vel.</p>
 <pre><span class="k">/goal</span> <span class="s">Finish the migration and keep tests green</span>
-<span class="k">/goal</span> pause     <span class="c"># pausa a execuÃ§Ã£o</span>
-<span class="k">/goal</span> clear     <span class="c"># limpa o objetivo se ele comeÃ§ar a derivar</span></pre>
+<span class="k">/goal</span> pause     <span class="c"># pausa a execuêÂ§êÂ£o</span>
+<span class="k">/goal</span> clear     <span class="c"># limpa o objetivo se ele comeêÂ§ar a derivar</span></pre>
   </div></div>
 
   <div class="step"><div class="b">8</div><div>
     <h3>Automatize</h3>
-    <p>NÃ­vel 5: pipe de git para o Codex, geraÃ§Ã£o de PR, release notes e integraÃ§Ã£o com GitHub Actions.</p>
+    <p>NêÂ­vel 5: pipe de git para o Codex, geraêÂ§êÂ£o de PR, release notes e integraêÂ§êÂ£o com GitHub Actions.</p>
 <pre><span class="k">git</span> diff | codex exec <span class="s">"Create a detailed PR description"</span>
 <span class="k">codex</span> exec <span class="s">"Create release notes from recent commits"</span></pre>
   </div></div>
@@ -254,31 +254,31 @@ command = <span class="s">"node"</span></pre>
 
 <section id="exemplos"><div class="wrap">
   <span class="chip">Exemplos</span>
-  <h2>O que dÃ¡ pra tirar da folha</h2>
-  <p class="sub">TrÃªs usos tÃ­picos, direto das seÃ§Ãµes do README.</p>
+  <h2>O que dêÂ¡ pra tirar da folha</h2>
+  <p class="sub">TrêÂªs usos têÂ­picos, direto das seêÂ§êÂµes do README.</p>
   <div class="grid g3">
-    <div class="card"><h3>ðŸ§­ Onboarding</h3><p>AlguÃ©m novo no Codex vai do NÃ­vel 1 ao 2 em minutos: instala, autentica e jÃ¡ usa slash commands e sessÃµes.</p></div>
-    <div class="card"><h3>ðŸ› ï¸ Config sob medida</h3><p>NÃ­vel 3 resolve â€œqual modelo uso?â€ e â€œonde configuro isso?â€ sem abrir cinco pÃ¡ginas de doc.</p></div>
-    <div class="card"><h3>ðŸ¤– GestÃ£o de projeto</h3><p>A seÃ§Ã£o de project management usa o Codex para quebrar features, gerar backlog de sprint e virar TODOs em issues.</p></div>
+    <div class="card"><h3>ê°Å¸Â§Â­ Onboarding</h3><p>AlguêÂ©m novo no Codex vai do NêÂ­vel 1 ao 2 em minutos: instala, autentica e jêÂ¡ usa slash commands e sessêÂµes.</p></div>
+    <div class="card"><h3>ê°Å¸âºÂ ê¯Â¸Â Config sob medida</h3><p>NêÂ­vel 3 resolve ê¢â¬Åqual modelo uso?ê¢â¬Â e ê¢â¬Åonde configuro isso?ê¢â¬Â sem abrir cinco pêÂ¡ginas de doc.</p></div>
+    <div class="card"><h3>ê°Å¸Â¤â GestêÂ£o de projeto</h3><p>A seêÂ§êÂ£o de project management usa o Codex para quebrar features, gerar backlog de sprint e virar TODOs em issues.</p></div>
   </div>
 </div></section>
 
 <section id="roadmap"><div class="wrap">
   <span class="chip">Roadmap</span>
   <h2>Como o repo evolui</h2>
-  <p class="sub">DocumentaÃ§Ã£o viva: cada mudanÃ§a do Codex vira commit aqui.</p>
-  <div class="phase"><div class="tag">Feito</div><div class="d"><strong>A folha em cinco nÃ­veis</strong><span>README completo, tabela de slash commands, referÃªncia de subcomandos e flags.</span></div></div>
+  <p class="sub">DocumentaêÂ§êÂ£o viva: cada mudanêÂ§a do Codex vira commit aqui.</p>
+  <div class="phase"><div class="tag">Feito</div><div class="d"><strong>A folha em cinco nêÂ­veis</strong><span>README completo, tabela de slash commands, referêÂªncia de subcomandos e flags.</span></div></div>
   <div class="phase"><div class="tag">Feito</div><div class="d"><strong>Skills em disco</strong><span>Quatro SKILL.md prontos para copiar em <code>skills/</code>.</span></div></div>
-  <div class="phase"><div class="tag">ContÃ­nuo</div><div class="d"><strong>Acompanhar a doc oficial</strong><span>Modelos, aposentadorias, auth, MCP e atalhos revisados a cada release do Codex.</span></div></div>
-  <div class="phase"><div class="tag">CI</div><div class="d"><strong>PortÃ£o de seguranÃ§a</strong><span>Workflow <code>security-scan.yml</code> (Trivy) roda em cada mudanÃ§a.</span></div></div>
+  <div class="phase"><div class="tag">ContêÂ­nuo</div><div class="d"><strong>Acompanhar a doc oficial</strong><span>Modelos, aposentadorias, auth, MCP e atalhos revisados a cada release do Codex.</span></div></div>
+  <div class="phase"><div class="tag">CI</div><div class="d"><strong>PortêÂ£o de seguranêÂ§a</strong><span>Workflow <code>security-scan.yml</code> (Trivy) roda em cada mudanêÂ§a.</span></div></div>
 </div></section>
 
 <footer>
   <div class="wrap">
-    <div class="pill">Markdown</div><div class="pill">OpenAI Codex CLI</div><div class="pill">GitHub Actions Â· Trivy</div>
-    <p style="margin-top:18px">Codex Cheat Sheet Â· referÃªncia baseada na documentaÃ§Ã£o oficial da OpenAI Â·
-      <a href="https://github.com/linnoff88-dev/codex-cheat-sheet">linnoff88-dev/codex-cheat-sheet</a> Â·
-      <a href="https://ARCKHÉ AI">ARCKHÉ AI</a></p>
+    <div class="pill">Markdown</div><div class="pill">OpenAI Codex CLI</div><div class="pill">GitHub Actions êÂ· Trivy</div>
+    <p style="margin-top:18px">Codex Cheat Sheet êÂ· referêÂªncia baseada na documentaêÂ§êÂ£o oficial da OpenAI êÂ·
+      <a href="https://github.com/linnoff88-dev/codex-cheat-sheet">linnoff88-dev/codex-cheat-sheet</a> êÂ·
+      <a href="https://ARCKHê AI">ARCKHê AI</a></p>
   </div>
 </footer>
 
@@ -286,10 +286,10 @@ command = <span class="s">"node"</span></pre>
   (function(){
     var KEY='codex-cheat-sheet-theme';
     var b=document.body, t=document.getElementById('themeToggle');
-    if(localStorage.getItem(KEY)==='light'){ b.classList.add('light'); t.textContent='â˜€ï¸'; }
+    if(localStorage.getItem(KEY)==='light'){ b.classList.add('light'); t.textContent='ê¢Ëâ¬ê¯Â¸Â'; }
     t.addEventListener('click',function(){
       var light=b.classList.toggle('light');
-      t.textContent=light?'â˜€ï¸':'ðŸŒ™';
+      t.textContent=light?'ê¢Ëâ¬ê¯Â¸Â':'ê°Å¸Åâ¢';
       localStorage.setItem(KEY, light?'light':'dark');
     });
   })();
